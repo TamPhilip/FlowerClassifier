@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C2D5F27209440950051CF9E /* FlowerClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1C2D5F26209440950051CF9E /* FlowerClassifier.mlmodel */; };
 		1C9C83B22093B9F600282641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C83B12093B9F600282641 /* AppDelegate.swift */; };
-		1C9C83B42093B9F600282641 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C83B32093B9F600282641 /* ViewController.swift */; };
+		1C9C83B42093B9F600282641 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C83B32093B9F600282641 /* CameraController.swift */; };
 		1C9C83B72093B9F600282641 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C83B52093B9F600282641 /* Main.storyboard */; };
 		1C9C83B92093B9F800282641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C83B82093B9F800282641 /* Assets.xcassets */; };
 		1C9C83BC2093B9F800282641 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C9C83BA2093B9F800282641 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C2D5F26209440950051CF9E /* FlowerClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = FlowerClassifier.mlmodel; path = "Flower Classification/FlowerClassifier.mlmodel"; sourceTree = SOURCE_ROOT; };
 		1C9C83AE2093B9F600282641 /* FlowerClassifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowerClassifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C9C83B12093B9F600282641 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1C9C83B32093B9F600282641 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1C9C83B32093B9F600282641 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		1C9C83B62093B9F600282641 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C9C83B82093B9F800282641 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C9C83BB2093B9F800282641 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +37,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C2D5F28209449E70051CF9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1C9C83B52093B9F600282641 /* Main.storyboard */,
+				1C9C83BA2093B9F800282641 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1C2D5F29209449ED0051CF9E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1C9C83B32093B9F600282641 /* CameraController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1C2D5F2A209449FB0051CF9E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		1C9C83A52093B9F500282641 = {
 			isa = PBXGroup;
 			children = (
@@ -55,11 +81,12 @@
 			isa = PBXGroup;
 			children = (
 				1C9C83B12093B9F600282641 /* AppDelegate.swift */,
-				1C9C83B32093B9F600282641 /* ViewController.swift */,
-				1C9C83B52093B9F600282641 /* Main.storyboard */,
+				1C2D5F29209449ED0051CF9E /* Controller */,
+				1C2D5F28209449E70051CF9E /* View */,
+				1C2D5F2A209449FB0051CF9E /* Models */,
 				1C9C83B82093B9F800282641 /* Assets.xcassets */,
-				1C9C83BA2093B9F800282641 /* LaunchScreen.storyboard */,
 				1C9C83BD2093B9F800282641 /* Info.plist */,
+				1C2D5F26209440950051CF9E /* FlowerClassifier.mlmodel */,
 			);
 			path = FlowerClassifier;
 			sourceTree = "<group>";
@@ -135,7 +162,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C9C83B42093B9F600282641 /* ViewController.swift in Sources */,
+				1C2D5F27209440950051CF9E /* FlowerClassifier.mlmodel in Sources */,
+				1C9C83B42093B9F600282641 /* CameraController.swift in Sources */,
 				1C9C83B22093B9F600282641 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
